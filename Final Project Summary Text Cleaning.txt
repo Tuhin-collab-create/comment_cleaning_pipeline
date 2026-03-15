@@ -1,0 +1,41 @@
+Final Project Summary: Text Cleaning & Sentiment Analysis Pipeline
+Project Overview:
+This project involved developing a robust Natural Language Processing (NLP) pipeline to clean, audit, and analyze a dataset of over 31,000 social media comments. The primary goal was to transform raw, noisy text into a structured format suitable for Machine Learning and sentiment trend identification.
+
+1. Data Cleaning Pipeline (Pre-processing):
+
+Noise Removal: Stripped URLs, user mentions (@user), special characters, and emojis to isolate core text.
+
+Tokenization: Segmented raw sentences into individual word tokens.
+
+Custom Slang Correction: Performed targeted cleaning for common dataset-specific errors (e.g., corrected "bihday" to "birthday").
+
+Lemmatization: Reduced words to their dictionary root form (e.g., "kids" to "kid", "days" to "day") using NLTK’s WordNetLemmatizer to ensure accurate frequency counts.
+
+Filtering: Removed tokens shorter than 3 characters and standard English stopwords.
+
+2. Data Quality Audit:
+
+Validation: Created a "Cleaning Status" metric to track the success rate of the pipeline.
+
+Efficiency: The pipeline successfully processed 99.8% of the data.
+
+Compression: On average, raw comments were reduced from 13 words to 7 high-impact tokens, removing approximately 46% of irrelevant noise.
+
+3. Key Analytical Insights:
+
+Word Frequency: The top themes identified were "day," "love," "happy," "life," and "time."
+
+Sentiment Distribution: * Positive Tokens: Led by "love" (2,875) and "happy" (1,707).
+
+Negative Tokens: Led by "sad" (431) and "hate" (256).
+
+Conclusion: The dataset exhibits a strongly positive sentiment profile, with celebratory and supportive language occurring nearly 7 times more frequently than negative or hostile language.
+
+4. Final Deliverables:
+
+Final_Submission_Ready.csv: Cleaned dataset containing original comments vs. lemmatized tokens.
+
+Final_Analyzed_Results.csv: Data including word counts and sentiment polarity scoring.
+
+Sentiment_Comparison.png: Visual bar chart of emotional token distribution.
